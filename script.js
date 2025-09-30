@@ -13,3 +13,6 @@ async function fetchPrices() {
 }
 
 fetchPrices();
+
+
+setInterval(fetchPrices, 30000); // refresh every 30 seconds

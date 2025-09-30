@@ -8,7 +8,15 @@
 </head>
 <body>
   <h1>Crypto Price Tracker</h1>
-  <div id="prices">
+<select id="coin-select">
+  <option value="bitcoin">Bitcoin (BTC)</option>
+  <option value="ethereum">Ethereum (ETH)</option>
+  <option value="dogecoin">Dogecoin (DOGE)</option>
+  <option value="solana">Solana (SOL)</option>
+</select>
+<p><strong>Selected Coin Price:</strong> <span id="selected-price">Loading...</span> USD</p>
+  
+<div id="prices">
     <p><strong>Bitcoin (BTC):</strong> <span id="btc-price">Loading...</span> USD</p>
     <p><strong>Ethereum (ETH):</strong> <span id="eth-price">Loading...</span> USD</p>
   </div>

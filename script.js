@@ -8,8 +8,11 @@ async function fetchPrices() {
     document.getElementById("btc-price").innerText = data.bitcoin.usd;
     document.getElementById("eth-price").innerText = data.ethereum.usd;
   } catch (error) {
-    console.error("Error fetching prices:", error);
-  }
+  console.error("Error fetching prices:", error);
+  document.getElementById("btc-price").innerText = "Error";
+  document.getElementById("eth-price").innerText = "Error";
+}
+
 }
 
 fetchPrices();

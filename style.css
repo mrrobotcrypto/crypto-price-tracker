@@ -29,3 +29,15 @@ body.dark #prices {
   background: #333;
   color: #f4f4f4;
 }
+
+
+@media (max-width: 600px) {
+  #prices {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}

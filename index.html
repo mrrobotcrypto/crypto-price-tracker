@@ -7,22 +7,35 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <button id="dark-mode-btn">Toggle Dark Mode</button>
+
   <h1>Crypto Price Tracker</h1>
-<select id="coin-select">
-  <option value="bitcoin">Bitcoin (BTC)</option>
-  <option value="ethereum">Ethereum (ETH)</option>
-  <option value="dogecoin">Dogecoin (DOGE)</option>
-  <option value="solana">Solana (SOL)</option>
-</select>
-<p><strong>Selected Coin Price:</strong> <span id="selected-price">Loading...</span> USD</p>
-  
-<div id="prices">
+
+  <select id="coin-select">
+    <option value="bitcoin">Bitcoin (BTC)</option>
+    <option value="ethereum">Ethereum (ETH)</option>
+    <option value="dogecoin">Dogecoin (DOGE)</option>
+    <option value="solana">Solana (SOL)</option>
+  </select>
+
+  <!-- Currency selector added -->
+  <select id="currency-select">
+    <option value="usd">USD</option>
+    <option value="eur">EUR</option>
+    <option value="try">TRY</option>
+  </select>
+
+  <!-- Coin logo added -->
+  <img id="coin-logo" src="" alt="coin logo" width="30">
+
+  <p><strong>Selected Coin Price:</strong> <span id="selected-price">Loading...</span></p>
+
+  <div id="prices">
     <p><strong>Bitcoin (BTC):</strong> <span id="btc-price">Loading...</span> USD</p>
     <p><strong>Ethereum (ETH):</strong> <span id="eth-price">Loading...</span> USD</p>
   </div>
 
-<p id="last-updated">Last updated: never</p>
-
+  <p id="last-updated">Last updated: never</p>
 
   <script src="script.js"></script>
 </body>

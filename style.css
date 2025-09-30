@@ -18,3 +18,14 @@ h1 {
   display: inline-block;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+
+
+body.dark {
+  background-color: #222;
+  color: #f4f4f4;
+}
+
+body.dark #prices {
+  background: #333;
+  color: #f4f4f4;
+}

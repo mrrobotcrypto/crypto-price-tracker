@@ -13,4 +13,15 @@ async function fetchSelectedCoin() {
 
 document.getElementById("coin-select").addEventListener("change", fetchSelectedCoin);
 fetchSelectedCoin();
+
+document.getElementById("last-updated").innerText = 
+  "Last updated: " + new Date().toLocaleTimeString();
+
+
+
+document.getElementById("dark-mode-btn").addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+});
+
+
 setInterval(fetchSelectedCoin, 30000);
